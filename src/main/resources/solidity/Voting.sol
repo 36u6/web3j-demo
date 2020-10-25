@@ -1,11 +1,11 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.7.3;
 
 contract Voting {
 
   mapping (bytes32 => uint8) public votes;
   bytes32[] public candidates;
 
-  constructor(bytes32[] candidateNames) public {
+  constructor(bytes32[] memory candidateNames) public {
     candidates = candidateNames;
   }
 

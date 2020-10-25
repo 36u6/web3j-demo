@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-    compile 'org.web3j:core:3.3.0',
+    compile 'org.web3j:core:4.6.3',
             'ch.qos.logback:logback-core:1.2.3',
             'ch.qos.logback:logback-classic:1.2.3'
 }
