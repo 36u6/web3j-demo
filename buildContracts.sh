@@ -19,8 +19,8 @@ for file in `ls $srcDir/*.sol`; do
 
   echo "Generating contract bindings"
   web3j solidity generate \
-      $abiDir/$target.bin \
-      $abiDir/$target.abi \
+      -b $abiDir/$target.bin \
+      -a $abiDir/$target.abi \
       -p com.hubwiz.demo.contracts \
       -o $javaDir > /dev/null
   echo "Complete"
